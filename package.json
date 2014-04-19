@@ -1,0 +1,30 @@
+{
+  "name": "textmail",
+  "version": "0.0.1",
+  "author": "Cyrus Eslami <ceslami@gmail.com>",
+  "description": "a simple zero-configuration command-line http server",
+  "contributors": [
+    {
+      "name": "Cyrus Eslami",
+      "email": "ceslami@gmail.com"
+    }
+  ],
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ceslami/textmail.git"
+  },
+  "keywords": [
+    "text",
+    "email",
+    "free text",
+    "text via email"
+  ],
+  "dependencies" : {
+    "nodemailer"   :  "0.6.3",
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.6"
+  }
+}
