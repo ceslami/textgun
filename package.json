@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "author": "Cyrus Eslami <ceslami@gmail.com>",
   "description": "a simple zero-configuration command-line http server",
+  "main":"./index.js",
   "contributors": [
     {
       "name": "Cyrus Eslami",
