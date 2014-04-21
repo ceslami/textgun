@@ -1,8 +1,10 @@
 # textmail
 
-Send texts over email for free. All you need to get started is a phone number and the associated carrier.
+Send texts over email for free. All you need to get started is a phone number. By default, we will attempt to send a message through the domains of all service providers, unless a carrier is specified.
 
 ### Usage
+
+*Coming...*
 
 ### License (MIT)
 
