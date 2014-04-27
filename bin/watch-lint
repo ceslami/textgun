@@ -5,9 +5,9 @@ while true; do
     jshint **/*.js
 
     if [ "$?" == "0" ]; then
-        echo $'\e[32m''✓ Formatted correctly at '$(date +"%T")
+        echo $(date +"%T")$'\e[32m'' ✓ Formatted correctly'
     else
-        echo $'\e[31m''✘ Formatted incorrectly at '$(date +"%T")
+        echo $(date +"%T")$'\e[31m'' ✘ Formatted incorrectly'
     fi
 
     tput sgr0

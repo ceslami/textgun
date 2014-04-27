@@ -4,7 +4,8 @@
     "author": "Cyrus Eslami <ceslami@gmail.com>",
     "description": "a simple zero-configuration command-line http server",
     "scripts": {
-        "lint": "./bin/watch-lint"
+        "lint": "./bin/watch-lint",
+        "test": "./bin/watch-test"
     },
     "main":"./index.js",
     "contributors": [
