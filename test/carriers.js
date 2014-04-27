@@ -23,8 +23,7 @@ describe('textmail', function() {
 
     describe('#getAllDomains', function() {
         it('should be a non-empty array', function() {
-            var allDomains = carriers.getAllDomains();
-            assert(allDomains.length);
+            assert(carriers.getAllDomains().length);
         });
     });
 
