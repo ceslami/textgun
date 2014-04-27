@@ -6,6 +6,6 @@ describe('textmail', function(){
     it('should be open immediately after being intialized', function(){
       var texter = textmail.textmail();
       assert.equal(texter.isClosed, false);
-    })
-  })
-})
+    });
+  });
+});

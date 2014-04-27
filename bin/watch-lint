@@ -1,0 +1,15 @@
+#!/bin/bash
+
+while true; do
+
+    jshint **/*.js
+
+    if [ "$?" == "0" ]; then
+        echo $'\e[32m''✓ Formatted correctly at '$(date +"%T")
+    else
+        echo $'\e[31m''✘ Formatted incorrectly at '$(date +"%T")
+    fi
+
+    tput sgr0
+    sleep 5
+done

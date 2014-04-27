@@ -1,35 +1,39 @@
 {
-  "name": "textmail",
-  "version": "0.0.1",
-  "author": "Cyrus Eslami <ceslami@gmail.com>",
-  "description": "a simple zero-configuration command-line http server",
-  "main":"./index.js",
-  "contributors": [
-    {
-      "name": "Cyrus Eslami",
-      "email": "ceslami@gmail.com"
+    "name": "textmail",
+    "version": "0.0.1",
+    "author": "Cyrus Eslami <ceslami@gmail.com>",
+    "description": "a simple zero-configuration command-line http server",
+    "scripts": {
+        "lint": "./bin/watch-lint"
+    },
+    "main":"./index.js",
+    "contributors": [
+        {
+          "name": "Cyrus Eslami",
+          "email": "ceslami@gmail.com"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ceslami/textmail.git"
+    },
+    "keywords": [
+        "text",
+        "email",
+        "free text",
+        "text via email"
+    ],
+    "dependencies": {
+        "nodemailer":  "0.6.3",
+        "underscore": "1.6.0"
+    },
+    "devDependencies":{
+        "jslint":"*",
+        "mocha":"*",
+        "should":"*"
+    },
+        "license": "MIT",
+        "engines": {
+        "node": ">=0.6"
     }
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ceslami/textmail.git"
-  },
-  "keywords": [
-    "text",
-    "email",
-    "free text",
-    "text via email"
-  ],
-  "dependencies": {
-    "nodemailer":  "0.6.3",
-    "underscore": "1.6.0"
-  },
-  "devDependencies":{
-      "mocha":"*",
-      "should":"*"
-  },
-  "license": "MIT",
-  "engines": {
-    "node": ">=0.6"
-  }
 }
