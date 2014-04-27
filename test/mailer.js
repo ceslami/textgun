@@ -11,7 +11,7 @@ describe('textmail', function() {
     });
 
     describe('@transport', function() {
-        it('should have a transport protool configured', function() {
+        it('should have a transport protocol configured', function() {
             var texter = textmail.textmail();
             assert.notEqual(texter.transport, null);
         });

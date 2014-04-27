@@ -14,10 +14,36 @@ describe('textmail', function() {
             it('should have a @name and @domain property', function() {
                 var americanCarriers = carriers.getAll().america;
                 _.each(americanCarriers, function(el, i) {
-                    assert(el.name != null);
-                    assert(el.domain != null);
+                    assert(el.name !== null);
+                    assert(el.domain !== null);
                 });
             });
+        });
+    });
+
+    describe('#getAllDomains', function() {
+        it('should be a non-empty array', function() {
+            var allDomains = carriers.getAllDomains();
+            assert(allDomains.length);
+        });
+    });
+
+    describe('#getDomainByCarrier', function() {
+        it('should return a result for Sprint', function() {
+            var domain = carriers.getDomainByCarrier('Sprint');
+            assert(domain === 'messaging.sprintpcs.com');
+        });
+    });
+
+    describe('#isValidDomain', function() {
+        it('should return false when the domain is unknown', function() {
+            var isValid = carriers.isValidDomain('SillyCarrier');
+            assert(!isValid);
+        });
+
+        it('should return true for a known domain', function() {
+            var isValid = carriers.isValidDomain('messaging.sprintpcs.com');
+            assert(isValid);
         });
     });
 });
