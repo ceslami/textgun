@@ -1,6 +1,5 @@
 #!/bin/bash
-
 while true; do
-    mocha test/*.js
+    ./bin/test
     sleep 5
 done

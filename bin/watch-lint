@@ -1,8 +1,7 @@
 #!/bin/bash
-
 while true; do
 
-    jshint **/*.js
+    ./bin/lint
 
     if [ "$?" == "0" ]; then
         echo $(date +"%T")$'\e[32m'' ✓ Formatted correctly'
