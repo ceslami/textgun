@@ -5,15 +5,15 @@ describe('textmail', function() {
 
     describe('@isClosed', function() {
         it('should be open immediately after being intialized', function() {
-            var texter = textmail();
-            assert.equal(texter.isClosed, false);
+            var text = textmail();
+            assert.equal(text.isClosed, false);
         });
     });
 
     describe('@transport', function() {
         it('should have a transport protocol configured', function() {
-            var texter = textmail();
-            assert.notEqual(texter.transport, null);
+            var text = textmail();
+            assert.notEqual(text.transport, null);
         });
     });
 });
