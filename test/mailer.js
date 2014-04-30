@@ -8,7 +8,7 @@ describe('textmail', function() {
                 username: 'admin@example.com',
                 password: 'password'
             });
-            assert.notEqual(text.transport, null);
+            assert.notEqual(text, null);
         });
     });
 });
