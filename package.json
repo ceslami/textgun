@@ -34,7 +34,8 @@
     "devDependencies":{
         "jslint":"*",
         "mocha":"*",
-        "should":"*"
+        "should":"*",
+        "chai": "*"
     },
         "license": "MIT",
         "engines": {
