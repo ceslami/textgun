@@ -1,5 +1,5 @@
 var assert = require('assert'),
-    textmail = require('../lib/mailer.js');
+    textmail = require('../lib/api.js');
 
 describe('textmail', function() {
     describe('@transport', function() {
