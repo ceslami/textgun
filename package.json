@@ -1,8 +1,8 @@
 {
-    "name": "textmail",
+    "name": "textgun",
     "version": "0.0.1",
     "author": "Cyrus Eslami <ceslami@gmail.com>",
-    "description": "a simple zero-configuration command-line http server",
+    "description": "Send text messages for free via email. https://github.com/ceslami/textgun",
     "scripts": {
         "lint": "./bin/lint",
         "test": "./bin/test",
@@ -18,7 +18,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/ceslami/textmail.git"
+        "url": "https://github.com/ceslami/textgun.git"
     },
     "keywords": [
         "text",

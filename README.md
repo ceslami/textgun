@@ -1,8 +1,8 @@
-# textmail
+# textgun
 
 Send texts over email for free. All you need to get started is a phone number. By default, we will attempt to send a message through the domains of all service providers, unless a carrier is specified.
 
-![https://travis-ci.org/ceslami/textmail](https://api.travis-ci.org/ceslami/textmail.svg)
+[![](https://api.travis-ci.org/ceslami/textgun.svg)](https://travis-ci.org/ceslami/textgun)
 
 ### Usage
 
