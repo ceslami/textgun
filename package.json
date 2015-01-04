@@ -32,10 +32,12 @@
         "underscore": "1.6.0"
     },
     "devDependencies":{
+        "jshint": "*",
         "jslint":"*",
         "mocha":"*",
         "should":"*",
-        "chai": "*"
+        "chai": "*",
+        "sinon": "*"
     },
         "license": "MIT",
         "engines": {

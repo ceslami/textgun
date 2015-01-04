@@ -1,40 +1,22 @@
 var _ = require('underscore'),
     assert = require('assert'),
-    carriers = require('../lib/carriers.js');
+    carriers = require('../lib/carriers');
 
-describe('textmail', function() {
+describe('carriers', function() {
 
-    describe('#getAll', function() {
-        it('should have a key for American carriers', function() {
-            var allCarriers = carriers.getAll();
-            assert(allCarriers.america instanceof Array);
-        });
+    describe('#getAllDomains', function() {
 
-        describe('American carriers', function() {
-            it('should have a @name and @domain property', function() {
-                var americanCarriers = carriers.getAll().america;
-                _.each(americanCarriers, function(el) {
-                    assert(el.name !== null);
-                    assert(el.domain !== null);
-                });
+        it('all entries should contain @name and @domain properties', function() {
+            var allDomains = carriers.getAllDomains();
+            _.each(allDomains, function(el) {
+                assert(el.name !== null);
+                assert(el.domain !== null);
             });
         });
     });
 
-    describe('#getAllDomains', function() {
-        it('should be a non-empty array', function() {
-            assert(carriers.getAllDomains().length);
-        });
-    });
-
-    describe('#getDomainByCarrier', function() {
-        it('should return a result for Sprint', function() {
-            var domain = carriers.getDomainByCarrier('Sprint');
-            assert(domain === 'messaging.sprintpcs.com');
-        });
-    });
-
     describe('#isValidDomain', function() {
+
         it('should return false when the domain is unknown', function() {
             var isValid = carriers.isValidDomain('SillyCarrier');
             assert(!isValid);

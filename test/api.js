@@ -2,6 +2,7 @@ var assert = require('assert'),
     textmail = require('../lib/api.js');
 
 describe('textmail', function() {
+
     describe('', function() {
         it('should have a transport protocol configured', function() {
             var api = textmail({

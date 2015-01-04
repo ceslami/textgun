@@ -14,5 +14,6 @@
     "undef": false,
     "unused": true,
     "trailing": true,
-    "maxlen": 80
+    "maxlen": 80,
+    "nomen": true
 }
