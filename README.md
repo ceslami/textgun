@@ -1,12 +1,38 @@
-# textgun
+# textgun [![](https://api.travis-ci.org/ceslami/textgun.svg)](https://travis-ci.org/ceslami/textgun) [![npm version](https://badge.fury.io/js/textgun.svg)](http://badge.fury.io/js/textgun)
 
-Send texts over email for free. All you need to get started is a phone number. By default, we will attempt to send a message through the domains of all service providers, unless a carrier is specified.
+Promise-based API for sending free text messages using carrier email gateways.
 
-[![](https://api.travis-ci.org/ceslami/textgun.svg)](https://travis-ci.org/ceslami/textgun)
+``npm install textgun``
 
 ### Usage
 
-*Coming...*
+```javascript
+var textgun = require('textgun');
+
+var transport = textgun({
+    email: $YOUR_EMAIL
+    password: $YOUR_PASSWORD
+});
+
+transport.send({
+    to: '1234567890',
+    text: 'Hey!'
+}).then(function() {
+    console.log('success!');
+}).fail(function(error) {
+    console.log(error);
+});
+```
+
+### Getting Started
+
+You'll notice the `$YOUR_EMAIL` and `$YOUR_PASSWORD` placeholders in the example above. You can use any credentials with a valid SMTP provider. The library and API are very small. There are no additional configuration and message sending options beyond what is showcased in the above example. Enjoy!
+
+### Limitations
+
+- Only supports US Carriers
+- Does not format/validate phone numbers
+- Must use full 10-digit phone number
 
 ### License (MIT)
 

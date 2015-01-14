@@ -1,46 +1,44 @@
 {
-    "name": "textgun",
-    "version": "0.0.1",
-    "author": "Cyrus Eslami <ceslami@gmail.com>",
-    "description": "Send text messages for free via email. https://github.com/ceslami/textgun",
-    "scripts": {
-        "lint": "./bin/lint",
-        "test": "./bin/test",
-        "watch-lint": "./bin/watch-lint",
-        "watch-test": "./bin/watch-test"
-    },
-    "main":"./index.js",
-    "contributors": [
-        {
-          "name": "Cyrus Eslami",
-          "email": "ceslami@gmail.com"
-        }
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/ceslami/textgun.git"
-    },
-    "keywords": [
-        "text",
-        "email",
-        "free text",
-        "text via email"
-    ],
-    "dependencies": {
-        "nodemailer":  "0.6.3",
-        "email-existence": "0.1.2",
-        "underscore": "1.6.0"
-    },
-    "devDependencies":{
-        "jshint": "*",
-        "jslint":"*",
-        "mocha":"*",
-        "should":"*",
-        "chai": "*",
-        "sinon": "*"
-    },
-        "license": "MIT",
-        "engines": {
-        "node": ">=0.6"
+  "name": "textgun",
+  "version": "0.0.9",
+  "author": "Cyrus Eslami <ceslami@gmail.com>",
+  "description": "Send text messages for free.",
+  "scripts": {
+    "lint": "./bin/lint",
+    "test": "./bin/test",
+    "watch-lint": "./bin/watch-lint",
+    "watch-test": "./bin/watch-test"
+  },
+  "main": "./index.js",
+  "contributors": [
+    {
+      "name": "Cyrus Eslami",
+      "email": "ceslami@gmail.com"
     }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ceslami/textgun.git"
+  },
+  "keywords": [
+    "text",
+    "email",
+    "free text",
+    "text via email"
+  ],
+  "dependencies": {
+    "nodemailer": "0.6.3",
+    "underscore": "1.6.0",
+    "q": "1.1.2"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*",
+    "chai": "*",
+    "sinon": "*"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.6"
+  }
 }
