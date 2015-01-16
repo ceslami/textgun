@@ -1,6 +1,6 @@
 {
   "name": "textgun",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "author": "Cyrus Eslami <ceslami@gmail.com>",
   "description": "Send text messages for free.",
   "scripts": {
