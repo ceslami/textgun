@@ -10,7 +10,7 @@ Promise-based API for sending free text messages using carrier email gateways.
 var textgun = require('textgun');
 
 var transport = textgun({
-    email: $YOUR_EMAIL
+    email: $YOUR_EMAIL,
     password: $YOUR_PASSWORD
 });
 
