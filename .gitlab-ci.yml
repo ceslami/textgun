@@ -1,0 +1,2 @@
+job1:
+  script: "chmod 755 bin/*; ./bin/lint; ./bin/test"
