@@ -32,7 +32,7 @@ You'll notice the `$YOUR_EMAIL` and `$YOUR_PASSWORD` placeholders in the example
 
 - Only supports US Carriers
 - Does not format/validate phone numbers
-- Must use full 10-digit phone number
+- Must use full 10 digit phone number
 
 ### License (MIT)
 
