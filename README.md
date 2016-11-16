@@ -24,7 +24,7 @@ transport.send({
 });
 ```
 
-### Getting Started
+### Getting Startedasdf
 
 You'll notice the `$YOUR_EMAIL` and `$YOUR_PASSWORD` placeholders in the example above. You can use any credentials with a valid SMTP provider. The library and API are very small. There are no additional configuration and message sending options beyond what is showcased in the above example. Enjoy!
 
