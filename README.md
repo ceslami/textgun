@@ -31,7 +31,7 @@ You will notice the `$YOUR_EMAIL` and `$YOUR_PASSWORD` placeholders in the examp
 ### Limitations
 
 - Only supports US Carriers
-- Does not format/validate phone numbers
+- Doesn't format/validate phone numbers
 - Must use full 10 digit phone number
 
 ### License (MIT)
