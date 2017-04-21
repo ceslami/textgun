@@ -20,7 +20,7 @@ transport.send({
 }).then(function() {
     console.log('success!');
 }).fail(function(error) {
-    console.log(error);
+    console.log(error);asdf
 });
 ```
 
